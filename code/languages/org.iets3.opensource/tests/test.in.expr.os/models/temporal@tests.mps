@@ -71,8 +71,6 @@
         <child id="5115872837156802411" name="expr" index="30czhm" />
       </concept>
       <concept id="5115872837156761033" name="org.iets3.core.expr.base.structure.EqualsExpression" flags="ng" index="30cPrO" />
-      <concept id="5115872837156687890" name="org.iets3.core.expr.base.structure.LessExpression" flags="ng" index="30d6GJ" />
-      <concept id="5115872837156687764" name="org.iets3.core.expr.base.structure.GreaterExpression" flags="ng" index="30d7iD" />
       <concept id="5115872837156652603" name="org.iets3.core.expr.base.structure.DivExpression" flags="ng" index="30dvO6" />
       <concept id="5115872837156652453" name="org.iets3.core.expr.base.structure.MinusExpression" flags="ng" index="30dvUo" />
       <concept id="5115872837156578671" name="org.iets3.core.expr.base.structure.MulExpression" flags="ng" index="30dDTi" />
@@ -138,6 +136,11 @@
       <concept id="5115872837157252551" name="org.iets3.core.expr.simpleTypes.structure.StringType" flags="ng" index="30bdrU" />
       <concept id="5115872837157054170" name="org.iets3.core.expr.simpleTypes.structure.NumberLiteral" flags="ng" index="30bXRB">
         <property id="5115872837157054173" name="value" index="30bXRw" />
+      </concept>
+      <concept id="4880743667108569396" name="org.iets3.core.expr.simpleTypes.structure.BoundsExpression" flags="ng" index="361oeP">
+        <child id="4880743667108569400" name="lower" index="361oeT" />
+        <child id="4880743667108569403" name="upper" index="361oeU" />
+        <child id="4723261570619513266" name="expr" index="3zyZNH" />
       </concept>
     </language>
     <language id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel">
@@ -2002,59 +2005,36 @@
             </node>
           </node>
         </node>
-        <node concept="1adJid" id="56r2aFOVAoI" role="1aduh9">
-          <property role="TrG5h" value="maximalbetrag" />
-          <node concept="30dDTi" id="56r2aFOVAoJ" role="1adJii">
-            <node concept="_emDc" id="56r2aFOVFsT" role="30dEs_">
-              <ref role="_emDf" node="56r2aFOVFnS" resolve="maximalSatz" />
-            </node>
-            <node concept="1adzI2" id="4eVSC65w1JO" role="30dEsF">
+        <node concept="1adJid" id="7iroIZHHBOJ" role="1aduh9">
+          <property role="TrG5h" value="limited" />
+          <node concept="361oeP" id="7iroIZHHBOK" role="1adJii">
+            <node concept="1adzI2" id="7iroIZHHBOL" role="3zyZNH">
               <ref role="1adwt6" node="4eVSC65vm1Q" resolve="gesamtsteuer" />
             </node>
+            <node concept="_emDc" id="7iroIZHHBOM" role="361oeT">
+              <ref role="_emDf" node="56r2aFOVyIV" resolve="minimalBetrag" />
+            </node>
+            <node concept="30dDTi" id="7iroIZHHBON" role="361oeU">
+              <node concept="_emDc" id="7iroIZHHBOO" role="30dEs_">
+                <ref role="_emDf" node="56r2aFOVFnS" resolve="maximalSatz" />
+              </node>
+              <node concept="1adzI2" id="7iroIZHHBOP" role="30dEsF">
+                <ref role="1adwt6" node="4eVSC65vm1Q" resolve="gesamtsteuer" />
+              </node>
+            </node>
           </node>
-          <node concept="1z9TsT" id="4eVSC65zIar" role="lGtFl">
-            <node concept="OjmMv" id="4eVSC65zIas" role="1w35rA">
-              <node concept="19SGf9" id="4eVSC65zIat" role="OjmMu">
-                <node concept="19SUe$" id="4eVSC65zIau" role="19SJt6">
+          <node concept="1z9TsT" id="7iroIZHHF79" role="lGtFl">
+            <node concept="OjmMv" id="7iroIZHHF7a" role="1w35rA">
+              <node concept="19SGf9" id="7iroIZHHF7b" role="OjmMu">
+                <node concept="19SUe$" id="7iroIZHHF7c" role="19SJt6">
                   <property role="19SUeA" value="Then we finally limit it." />
                 </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="2fGnzi" id="56r2aFOUWkb" role="1aduh9">
-          <node concept="2fGnzd" id="56r2aFOUWkc" role="2fGnxs">
-            <node concept="30d6GJ" id="56r2aFOUWkd" role="2fGnzS">
-              <node concept="_emDc" id="56r2aFOV$eV" role="30dEs_">
-                <ref role="_emDf" node="56r2aFOVyIV" resolve="minimalBetrag" />
-              </node>
-              <node concept="1adzI2" id="4eVSC65wdYj" role="30dEsF">
-                <ref role="1adwt6" node="4eVSC65vm1Q" resolve="gesamtsteuer" />
-              </node>
-            </node>
-            <node concept="_emDc" id="56r2aFOV$VR" role="2fGnzA">
-              <ref role="_emDf" node="56r2aFOVyIV" resolve="minimalBetrag" />
-            </node>
-          </node>
-          <node concept="2fGnzd" id="56r2aFOUWkh" role="2fGnxs">
-            <node concept="30d7iD" id="56r2aFOUWki" role="2fGnzS">
-              <node concept="1adzI2" id="4eVSC65whj_" role="30dEsF">
-                <ref role="1adwt6" node="4eVSC65vm1Q" resolve="gesamtsteuer" />
-              </node>
-              <node concept="1adzI2" id="56r2aFOVAoO" role="30dEs_">
-                <ref role="1adwt6" node="56r2aFOVAoI" resolve="maximalbetrag" />
-              </node>
-            </node>
-            <node concept="1adzI2" id="56r2aFOVEEt" role="2fGnzA">
-              <ref role="1adwt6" node="56r2aFOVAoI" resolve="maximalbetrag" />
-            </node>
-          </node>
-          <node concept="2fGnzd" id="4voqclTw0WV" role="2fGnxs">
-            <node concept="2fHqz8" id="4voqclTw1_W" role="2fGnzS" />
-            <node concept="1adzI2" id="4eVSC65wj_Q" role="2fGnzA">
-              <ref role="1adwt6" node="4eVSC65vm1Q" resolve="gesamtsteuer" />
-            </node>
-          </node>
+        <node concept="1adzI2" id="7iroIZHHBOQ" role="1aduh9">
+          <ref role="1adwt6" node="7iroIZHHBOJ" resolve="limited" />
         </node>
       </node>
       <node concept="1ahQXy" id="56r2aFOUWkq" role="1ahQWs">
