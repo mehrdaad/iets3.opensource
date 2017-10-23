@@ -651,6 +651,20 @@
     <node concept="_ixoA" id="3nGzaxUqLR1" role="_iOnB" />
     <node concept="_fkuM" id="3nGzaxUqMjU" role="_iOnB">
       <property role="TrG5h" value="TestArith" />
+      <node concept="_fkuZ" id="7iroIZHMpfH" role="_fkp5">
+        <node concept="_fku$" id="7iroIZHMpfI" role="_fkur" />
+        <node concept="30dDZf" id="7iroIZHMpiT" role="_fkuY">
+          <node concept="30bXRB" id="7iroIZHMpjf" role="30dEs_">
+            <property role="30bXRw" value="2" />
+          </node>
+          <node concept="30bXRB" id="7iroIZHMpiB" role="30dEsF">
+            <property role="30bXRw" value="1" />
+          </node>
+        </node>
+        <node concept="30bXRB" id="7iroIZHMpky" role="_fkuS">
+          <property role="30bXRw" value="3" />
+        </node>
+      </node>
       <node concept="_fkuZ" id="3nGzaxUqMlF" role="_fkp5">
         <node concept="_fku$" id="3nGzaxUqMlG" role="_fkur" />
         <node concept="FfN7I" id="3nGzaxUrMBc" role="_fkuS">
@@ -1981,8 +1995,8 @@
         </node>
         <node concept="1adJid" id="4eVSC65vm1Q" role="1aduh9">
           <property role="TrG5h" value="gesamtsteuer" />
-          <node concept="1QScDb" id="4eVSC65vMez" role="1adJii">
-            <node concept="2$5g5R" id="4eVSC65vPAv" role="1QScD9" />
+          <node concept="1QScDb" id="7iroIZHNIFm" role="1adJii">
+            <node concept="2$5g5R" id="7iroIZHNLfW" role="1QScD9" />
             <node concept="1QScDb" id="4eVSC65vwO5" role="30czhm">
               <node concept="1fAFdr" id="4eVSC65v$5X" role="1QScD9">
                 <property role="1fAGMV" value="MONTHS" />

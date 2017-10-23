@@ -22,8 +22,6 @@
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" />
     <import index="r4b4" ref="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -2557,20 +2555,6 @@
       <property role="1hAc7j" value="backspace_action_id" />
       <node concept="1hAIg9" id="5sTgzMChPd7" role="1hA7z_">
         <node concept="3clFbS" id="5sTgzMChPd8" role="2VODD2">
-          <node concept="3clFbF" id="91pmpwbTQY" role="3cqZAp">
-            <node concept="2OqwBi" id="91pmpwbTQV" role="3clFbG">
-              <node concept="10M0yZ" id="91pmpwbTQW" role="2Oq$k0">
-                <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-              </node>
-              <node concept="liA8E" id="91pmpwbTQX" role="2OqNvi">
-                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                <node concept="Xl_RD" id="91pmpwbUd5" role="37wK5m">
-                  <property role="Xl_RC" value="XXXX" />
-                </node>
-              </node>
-            </node>
-          </node>
           <node concept="3clFbF" id="5sTgzMChPd9" role="3cqZAp">
             <node concept="2OqwBi" id="5sTgzMChPda" role="3clFbG">
               <node concept="0IXxy" id="5sTgzMChPdb" role="2Oq$k0" />
