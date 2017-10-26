@@ -21,6 +21,8 @@
     <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" />
     <import index="r4b4" ref="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+    <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
+    <import index="i6kd" ref="r:2261c766-d7b6-49d7-91bd-1207e471af0b(org.iets3.core.expr.lambda.editor)" implicit="true" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -63,6 +65,7 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
+      <concept id="795210086017940429" name="jetbrains.mps.lang.editor.structure.ReadOnlyStyleClassItem" flags="lg" index="xShMh" />
       <concept id="3547227755871693971" name="jetbrains.mps.lang.editor.structure.PredefinedSelector" flags="ng" index="2B6iha">
         <property id="2162403111523065396" name="cellId" index="1lyBwo" />
       </concept>
@@ -576,25 +579,35 @@
           </node>
         </node>
       </node>
-      <node concept="3F0ifn" id="6KxoTHgR6Dh" role="3EZMnx">
-        <property role="3F0ifm" value="*" />
-        <node concept="11L4FC" id="6KxoTHgR6Mt" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="11LMrY" id="3GdqffBRd27" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="pkWqt" id="6KxoTHgR6Mv" role="pqm2j">
-          <node concept="3clFbS" id="6KxoTHgR6Mw" role="2VODD2">
-            <node concept="3clFbF" id="6KxoTHgR6N7" role="3cqZAp">
-              <node concept="2OqwBi" id="6KxoTHgR6RU" role="3clFbG">
-                <node concept="pncrf" id="6KxoTHgR6N6" role="2Oq$k0" />
-                <node concept="2qgKlT" id="6KxoTHgR75x" role="2OqNvi">
-                  <ref role="37wK5l" to="pbu6:6KxoTHgLvAa" resolve="hasEffect" />
+      <node concept="1HlG4h" id="7$TgoCYcP7L" role="3EZMnx">
+        <ref role="1k5W1q" to="i6kd:4qVjx3jYYFK" resolve="effect" />
+        <node concept="1HfYo3" id="7$TgoCYcP7N" role="1HlULh">
+          <node concept="3TQlhw" id="7$TgoCYcP7P" role="1Hhtcw">
+            <node concept="3clFbS" id="7$TgoCYcP7R" role="2VODD2">
+              <node concept="3clFbF" id="7$TgoCYcPRZ" role="3cqZAp">
+                <node concept="2OqwBi" id="7$TgoCYcPS0" role="3clFbG">
+                  <node concept="2OqwBi" id="7$TgoCYcPS1" role="2Oq$k0">
+                    <node concept="pncrf" id="7$TgoCYcPS2" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="7$TgoCYcPS3" role="2OqNvi">
+                      <ref role="37wK5l" to="pbu6:6GySMNjjWfO" resolve="effectDescriptor" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="7$TgoCYdkAy" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:7$TgoCYcVoi" resolve="toAnnotation" />
+                  </node>
                 </node>
               </node>
             </node>
           </node>
+        </node>
+        <node concept="VPxyj" id="7$TgoCYdkPT" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="xShMh" id="7$TgoCYdliW" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="7$TgoCYfR6u" role="3F10Kt">
+          <property role="VOm3f" value="true" />
         </node>
       </node>
       <node concept="3F0ifn" id="49WTic8gFg$" role="3EZMnx">
@@ -710,22 +723,38 @@
           </node>
         </node>
       </node>
-      <node concept="3F0ifn" id="sflsE7p_FP" role="3EZMnx">
-        <property role="3F0ifm" value="*" />
-        <node concept="11L4FC" id="sflsE7p_GR" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="pkWqt" id="sflsE7pAtA" role="pqm2j">
-          <node concept="3clFbS" id="sflsE7pAtB" role="2VODD2">
-            <node concept="3clFbF" id="sflsE7pAva" role="3cqZAp">
-              <node concept="2OqwBi" id="sflsE7pAyd" role="3clFbG">
-                <node concept="pncrf" id="sflsE7pAv9" role="2Oq$k0" />
-                <node concept="2qgKlT" id="sflsE7pAEN" role="2OqNvi">
-                  <ref role="37wK5l" to="pbu6:6KxoTHgLvAa" resolve="hasEffect" />
+      <node concept="1HlG4h" id="63mrHUnMMvQ" role="3EZMnx">
+        <ref role="1k5W1q" to="i6kd:4qVjx3jYYFK" resolve="effect" />
+        <node concept="1HfYo3" id="63mrHUnMMvR" role="1HlULh">
+          <node concept="3TQlhw" id="63mrHUnMMvS" role="1Hhtcw">
+            <node concept="3clFbS" id="63mrHUnMMvT" role="2VODD2">
+              <node concept="3clFbF" id="63mrHUnMMvU" role="3cqZAp">
+                <node concept="2OqwBi" id="63mrHUnMMvV" role="3clFbG">
+                  <node concept="2OqwBi" id="63mrHUnMMvW" role="2Oq$k0">
+                    <node concept="pncrf" id="63mrHUnMMvX" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="63mrHUnMMvY" role="2OqNvi">
+                      <ref role="37wK5l" to="pbu6:6GySMNjjWfO" resolve="effectDescriptor" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="63mrHUnMMvZ" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:7$TgoCYcVoi" resolve="toAnnotation" />
+                  </node>
                 </node>
               </node>
             </node>
           </node>
+        </node>
+        <node concept="VPxyj" id="63mrHUnMMw0" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="xShMh" id="63mrHUnMMw1" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="63mrHUnMMw2" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11L4FC" id="63mrHUnO6SA" role="3F10Kt">
+          <property role="VOm3f" value="true" />
         </node>
       </node>
       <node concept="3F0ifn" id="2uR5X5a$364" role="3EZMnx">

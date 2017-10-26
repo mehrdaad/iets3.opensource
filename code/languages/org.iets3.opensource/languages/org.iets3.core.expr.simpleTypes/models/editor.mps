@@ -12,10 +12,9 @@
     <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
-    <import index="epcs" ref="b33d119e-196d-4497-977c-5c167b21fe33/r:b7f325a3-1f57-46bc-8b14-d2d7c5ff6714(com.mbeddr.mpsutil.framecell/com.mbeddr.mpsutil.framecell.editor)" />
     <import index="r4b4" ref="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
-    <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
+    <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -675,34 +674,6 @@
       <node concept="2X7gjp" id="1VCS9PlsE16" role="1Qtc8A" />
     </node>
   </node>
-  <node concept="24kQdi" id="56r2aFONcW7">
-    <property role="3GE5qa" value="string" />
-    <ref role="1XX52x" to="5qo5:56r2aFONcVD" resolve="StringStartsWithTarget" />
-    <node concept="3EZMnI" id="56r2aFONcWc" role="2wV5jI">
-      <node concept="2iRfu4" id="56r2aFONcWd" role="2iSdaV" />
-      <node concept="3F0ifn" id="56r2aFONcWe" role="3EZMnx">
-        <property role="3F0ifm" value="startsWith" />
-      </node>
-      <node concept="3F0ifn" id="56r2aFONcWf" role="3EZMnx">
-        <property role="3F0ifm" value="(" />
-        <node concept="11L4FC" id="56r2aFONcWg" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="11LMrY" id="56r2aFONcWh" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3F1sOY" id="56r2aFONcWi" role="3EZMnx">
-        <ref role="1NtTu8" to="5qo5:56r2aFONcVE" resolve="value" />
-      </node>
-      <node concept="3F0ifn" id="56r2aFONcWj" role="3EZMnx">
-        <property role="3F0ifm" value=")" />
-        <node concept="11L4FC" id="56r2aFONcWk" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="24kQdi" id="4eVSC65JA5o">
     <property role="3GE5qa" value="numeric.number.limit" />
     <ref role="1XX52x" to="5qo5:4eVSC65JA4O" resolve="BoundsExpression" />
@@ -780,6 +751,34 @@
       <node concept="3F0ifn" id="4eVSC65NNA9" role="3EZMnx">
         <property role="3F0ifm" value=")" />
         <node concept="11L4FC" id="4eVSC65NNAJ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="56r2aFONcW7">
+    <property role="3GE5qa" value="string" />
+    <ref role="1XX52x" to="5qo5:56r2aFONcVD" resolve="StringStartsWithTarget" />
+    <node concept="3EZMnI" id="56r2aFONcWc" role="2wV5jI">
+      <node concept="2iRfu4" id="56r2aFONcWd" role="2iSdaV" />
+      <node concept="3F0ifn" id="56r2aFONcWe" role="3EZMnx">
+        <property role="3F0ifm" value="startsWith" />
+      </node>
+      <node concept="3F0ifn" id="56r2aFONcWf" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <node concept="11L4FC" id="56r2aFONcWg" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="56r2aFONcWh" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="56r2aFONcWi" role="3EZMnx">
+        <ref role="1NtTu8" to="5qo5:56r2aFONcVE" resolve="value" />
+      </node>
+      <node concept="3F0ifn" id="56r2aFONcWj" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="11L4FC" id="56r2aFONcWk" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>

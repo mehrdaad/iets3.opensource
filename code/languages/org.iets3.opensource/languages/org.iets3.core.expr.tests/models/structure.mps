@@ -578,6 +578,9 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
+    <node concept="PrWs8" id="4qVjx3kqVOI" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1$1rueeG254">
     <property role="EcuMT" value="1801842150043820356" />
@@ -898,6 +901,22 @@
     <node concept="PrWs8" id="3GdqffC1ex2" role="PzmwI">
       <ref role="PrY4T" to="hm2y:91pmpwTPq5" resolve="IMainSlot" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="37V13JR4s$_">
+    <property role="EcuMT" value="3601476982607563045" />
+    <property role="3GE5qa" value="assessment.structural" />
+    <property role="TrG5h" value="AllFilter" />
+    <property role="R5$K7" value="false" />
+    <property role="R5$K2" value="false" />
+    <property role="34LRSv" value="expressions everywhere" />
+    <ref role="1TJDcQ" node="CrzyxmE7bQ" resolve="StructuralCoverageNodesFilter" />
+  </node>
+  <node concept="1TIwiD" id="1EZBwZ4mn8x">
+    <property role="3GE5qa" value="" />
+    <property role="TrG5h" value="NotEqualsTestOp" />
+    <property role="34LRSv" value="not-equals" />
+    <property role="EcuMT" value="1927432956093755937" />
+    <ref role="1TJDcQ" node="ub9nkyHAbg" resolve="TestOp" />
   </node>
 </model>
 

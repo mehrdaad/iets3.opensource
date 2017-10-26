@@ -6,9 +6,11 @@
     <devkit ref="00000000-0000-4000-0000-5604ebd4f22c(jetbrains.mps.devkit.aspect.constraints)" />
   </languages>
   <imports>
+    <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" />
     <import index="8lgj" ref="r:69a1255c-62e5-4b5d-ae54-d3a534a3ad07(org.iets3.core.expr.mutable.structure)" implicit="true" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
+    <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -70,8 +72,14 @@
       </concept>
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
     </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+    </language>
   </registry>
   <node concept="1M2fIO" id="3GdqffBOTTa">
+    <property role="3GE5qa" value="box" />
     <ref role="1M2myG" to="8lgj:3GdqffBKoAm" resolve="BoxType" />
     <node concept="9S07l" id="3GdqffBOTTb" role="9Vyp8">
       <node concept="3clFbS" id="3GdqffBOTTc" role="2VODD2">
@@ -91,6 +99,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="3GdqffBPhK8">
+    <property role="3GE5qa" value="box" />
     <ref role="1M2myG" to="8lgj:3GdqffBPhJG" resolve="BoxDotTarget" />
     <node concept="9S07l" id="3GdqffBPhK9" role="9Vyp8">
       <node concept="3clFbS" id="3GdqffBPhKa" role="2VODD2">
@@ -117,6 +126,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="3GdqffC6Lma">
+    <property role="3GE5qa" value="box" />
     <ref role="1M2myG" to="8lgj:3GdqffC6Ll0" resolve="UpdateItExpression" />
     <node concept="9S07l" id="3GdqffC6Lmk" role="9Vyp8">
       <node concept="3clFbS" id="3GdqffC6Lml" role="2VODD2">
@@ -127,13 +137,48 @@
               <node concept="2Xjw5R" id="3GdqffC6LQ1" role="2OqNvi">
                 <node concept="1xMEDy" id="3GdqffC6LQ3" role="1xVPHs">
                   <node concept="chp4Y" id="3GdqffC6LZ3" role="ri$Ld">
-                    <ref role="cht4Q" to="8lgj:3GdqffBQYFy" resolve="UdpateTarget" />
+                    <ref role="cht4Q" to="8lgj:3GdqffBQYFy" resolve="BoxUpdateTarget" />
                   </node>
                 </node>
                 <node concept="1xIGOp" id="3GdqffC6Mij" role="1xVPHs" />
               </node>
             </node>
             <node concept="3x8VRR" id="3GdqffC6N3x" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="3GdqffC8HAu">
+    <ref role="1M2myG" to="8lgj:3GdqffC8H$g" resolve="NewTxBlock" />
+    <node concept="9S07l" id="3GdqffC8HAv" role="9Vyp8">
+      <node concept="3clFbS" id="3GdqffC8HAw" role="2VODD2">
+        <node concept="3clFbF" id="3GdqffC8HHx" role="3cqZAp">
+          <node concept="2OqwBi" id="3GdqffC8HSW" role="3clFbG">
+            <node concept="nLn13" id="3GdqffC8HHw" role="2Oq$k0" />
+            <node concept="1mIQ4w" id="3GdqffC8I9H" role="2OqNvi">
+              <node concept="chp4Y" id="79jc6YzKoQS" role="cj9EA">
+                <ref role="cht4Q" to="zzzn:49WTic8eSCJ" resolve="IFunctionLike" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="79jc6Yz3CXG">
+    <property role="3GE5qa" value="void" />
+    <ref role="1M2myG" to="8lgj:79jc6Yz3CVd" resolve="VoidType" />
+    <node concept="9S07l" id="79jc6Yz3CXQ" role="9Vyp8">
+      <node concept="3clFbS" id="79jc6Yz3CXR" role="2VODD2">
+        <node concept="3clFbF" id="79jc6Yz3D50" role="3cqZAp">
+          <node concept="2OqwBi" id="79jc6Yz3Dgr" role="3clFbG">
+            <node concept="nLn13" id="79jc6Yz3D4Z" role="2Oq$k0" />
+            <node concept="1mIQ4w" id="79jc6Yz3Dxc" role="2OqNvi">
+              <node concept="chp4Y" id="79jc6Yz82S8" role="cj9EA">
+                <ref role="cht4Q" to="hm2y:79jc6Yz3CVE" resolve="IVoidContext" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
